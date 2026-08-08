@@ -1,0 +1,91 @@
+{
+  "projects": [
+    {
+      "image": "/images/projects/virtual-tryon.png",
+      "title": "AI Virtual Try-On Fashion E-commerce Platform",
+      "bodyText": "- Developed a production-ready AI virtual try-on system for fashion e-commerce using state-of-the-art models from **Hugging Face**.\n- Implemented human parsing, image segmentation, pose estimation, and virtual garment fitting pipelines.\n- Deployed GPU inference services on **AWS**, **Google Cloud Platform**, and **DigitalOcean**.\n- Built a responsive frontend using **Next.js**, **React**, and **Tailwind CSS**.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/muntasir-396/Trial_On"
+        },
+        {
+          "text": "Live",
+          "href": "https://your-tryon.vercel.app"
+        }
+      ],
+      "tags": [
+
+        "Diffusion Models",
+        "PyTorch",
+        "Hugging Face",
+        "AWS",
+        "GCP",
+        "DigitalOcean",
+        "Next.js"
+      ]
+    },
+    {
+      "image": "/images/projects/research-agent.png",
+      "title": "DEEP_RESEARCH_GEN_AI",
+      "bodyText": "- Built an autonomous AI research assistant using **LangChain**, **Mistral AI**, and **Tavily Search**.\n- Implemented intelligent planning, web search, document analysis, summarization, and report generation.\n- Developed an interactive **Streamlit** interface for AI-assisted research.\n- Automated multi-step research workflows using multiple AI agents.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/muntasir-396/DEEP_RESEARCH_GEN_AI"
+        }
+      ],
+      "tags": [
+        "LangChain",
+        "Mistral AI",
+        "Python",
+        "Streamlit",
+        "LLM",
+        "AI Agents"
+      ]
+    },
+    {
+      "image": "/images/projects/metro-rail.png",
+      "title": "Dhaka Metro Rail Management System",
+      "bodyText": "- Designed and implemented a comprehensive Metro Rail Management System using **MySQL**.\n- Developed normalized relational database schemas for trains, stations, routes, schedules, passengers, and ticket management.\n- Implemented SQL queries, stored procedures, triggers, views, and constraints.\n- Optimized database performance through indexing and efficient query design.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/muntasir-396/MetroRail-System"
+        }
+      ],
+      "tags": [
+        "MySQL",
+        "SQL",
+        "DBMS",
+        "Database Design",
+        "Stored Procedures"
+      ]
+    },
+    
+    {
+      "image": "/images/projects/retail-ai.png",
+      "title": "AI Retail Management Platform (On Going)",
+      "bodyText": "- Built a full-stack AI-powered retail management platform using **Next.js**, **React**, **TypeScript**, **Prisma**, and **PostgreSQL**.\n- Developed inventory, sales, expense, customer, analytics, and employee management modules.\n- Integrated AI features including automated product descriptions, UGC image generation, and business workflow automation.\n- Designed scalable REST APIs with secure authentication and responsive dashboards.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/yourusername/retail-ai"
+        },
+        {
+          "text": "Live",
+          "href": "https://your-retail-ai.vercel.app"
+        }
+      ],
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Prisma",
+        "PostgreSQL",
+        "AI",
+        "Tailwind CSS"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://muntasir.dev/sitemap.xml

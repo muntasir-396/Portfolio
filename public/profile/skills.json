@@ -1,0 +1,110 @@
+{
+  "intro": "I enjoy building intelligent systems using Machine Learning, Generative AI, and modern cloud infrastructure. My experience includes AI research, model deployment, cloud GPU infrastructure, and production-ready AI applications.",
+
+  "skills": [
+    {
+      "title": "Programming & Databases",
+      "items": [
+        {
+          "icon": "images/skills/python.png",
+          "title": "Python"
+        },
+        {
+          "icon": "images/skills/java.png",
+          "title": "Java"
+        },
+        {
+          "icon": "https://cdn.simpleicons.org/cplusplus/00599C",
+          "title": "C++"
+        },
+        {
+          "icon": "images/skills/mysql.png",
+          "title": "MySQL"
+        }
+      ]
+    },
+    {
+      "title": "AI Frameworks & Libraries",
+      "items": [
+        {
+          "icon": "https://cdn.simpleicons.org/pytorch/EE4C2C",
+          "title": "PyTorch"
+        },
+        {
+          "icon": "https://cdn.simpleicons.org/tensorflow/FF6F00",
+          "title": "TensorFlow"
+        },
+        {
+          "icon": "https://cdn.simpleicons.org/scikitlearn/F7931E",
+          "title": "Scikit-Learn"
+        },
+        {
+          "icon": "https://cdn.simpleicons.org/langchain",
+          "title": "LangChain"
+        },
+        {
+          "icon": "https://cdn.simpleicons.org/huggingface/FFD21E",
+          "title": "Hugging Face"
+        },
+        {
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+          "title": "ComfyUI"
+        }
+      ]
+    },
+    {
+      "title": "Tools & Cloud Platforms",
+      "items": [
+        {
+          "icon": "images/skills/git.png",
+          "title": "Git"
+        },
+        {
+          "icon": "https://cdn.simpleicons.org/github/white",
+          "title": "GitHub"
+        },
+        {
+          "icon": "images/skills/docker.png",
+          "title": "Docker"
+        },
+        {
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
+          "title": "AWS"
+        },
+        {
+          "icon": "https://cdn.simpleicons.org/googlecloud/4285F4",
+          "title": "Google Cloud"
+        },
+        {
+          "icon": "https://cdn.simpleicons.org/digitalocean/0080FF",
+          "title": "DigitalOcean"
+        }
+      ]
+    },
+    {
+      "title": "AI Engineering",
+      "items": [
+        {
+          "icon": "https://cdn.simpleicons.org/huggingface/FFD21E",
+          "title": "Hugging Face"
+        },
+        {
+          "icon": "https://cdn.simpleicons.org/keras/D00000",
+          "title": "Model Fine-Tuning"
+        },
+        {
+          "icon": "https://cdn.simpleicons.org/apacheairflow/017CEE",
+          "title": "AI Inference Pipelines"
+        },
+        {
+          "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
+          "title": "RAG"
+        },
+        {
+          "icon": "https://cdn.simpleicons.org/probot/00B0FF",
+          "title": "AI Agents"
+        }
+      ]
+    }
+  ]
+}
