@@ -1,5 +1,30 @@
 {
   "projects": [
+{
+  "image": "/images/projects/tuition-media.png",
+  "title": "TUITION_MEDIA",
+  "bodyText": "- Built a comprehensive tuition management platform connecting teachers, students, and guardians.\n- Implemented a secure marketplace where Guardians can **post tuition opportunities** and Teachers can **apply for available tuition**.\n- Integrated **Guardian-Teacher Management tools** for seamless background verification, profile approvals, and onboarding.\n- Developed an automated **Demo Schedule system** allowing guardians to book and track trial classes with prospective tutors.\n- Built a central **Admin Dashboard** with overarching metrics to oversee match-making pipelines, resolve disputes, and manage users.\n- Incorporated a reliable **Payment Gateway** to process handle platform commissions, and automate tutor payouts.",
+  "links": [
+    {
+      "text": "GitHub",
+      "href": ""
+    },
+    {
+      "text": "Tutor Live",
+      "href": "https://xyz-tuition.ai.studio"
+    },
+    {
+      "text": "Admin Live",
+      "href": "https://xyz-tuition.ai.studio/?tab=admin-login"
+    }
+  ],
+  "tags": [
+    "React",
+    "Node.js",
+    "JavaScript"
+  ]
+},
+
     {
       "image": "/images/projects/virtual-tryon.png",
       "title": "AI Virtual Try-On Fashion E-commerce Platform",
