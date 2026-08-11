@@ -1,6 +1,33 @@
 {
   "projects": [
 {
+"image": "/images/projects/ed-tech-project.png",
+
+"title": "ED_TECH_PROJECT",
+
+"bodyText": "- Built a comprehensive full-stack **EdTech course-selling platform** connecting Instructors and Students.\n- Developed a complete **Course Marketplace** where instructors can create, manage, and publish courses while students can browse, purchase, and access their enrolled courses.\n- Implemented **Student Learning Management** features including course enrollment, lesson access, progress tracking, and personalized learning experiences.\n- Built an **Instructor Dashboard** for creating courses, managing lessons and content, monitoring enrollments, and tracking course performance.\n- Developed a centralized **Admin Dashboard** for managing users, instructors, courses, categories, transactions, and overall platform activity.\n- Integrated a secure **Payment Gateway** to process course purchases, manage transactions, platform commissions, and instructor payouts.\n- Implemented **role-based authentication and authorization** for Students, Instructors, and Administrators to ensure secure access to platform features.\n- Designed a responsive and user-friendly interface to provide a seamless experience across course discovery, purchasing, and online learning.",
+
+"links": [
+{
+"text": "GitHub",
+"href": "https://github.com/muntasir-396/ED-TECH"
+},
+{
+"text": "Live",
+"href": "https://ed-tech-244954813348.asia-southeast1.run.app"
+}
+],
+
+"tags": [
+"React",
+"Node.js",
+"JavaScript",
+"MongoDB",
+"REST API",
+"Payment Gateway"
+]
+},
+{
   "image": "/images/projects/tuition-media.png",
   "title": "TUITION_MEDIA",
   "bodyText": "- Built a comprehensive tuition management platform connecting teachers, students, and guardians.\n- Implemented a secure marketplace where Guardians can **post tuition opportunities** and Teachers can **apply for available tuition**.\n- Integrated **Guardian-Teacher Management tools** for seamless background verification, profile approvals, and onboarding.\n- Developed an automated **Demo Schedule system** allowing guardians to book and track trial classes with prospective tutors.\n- Built a central **Admin Dashboard** with overarching metrics to oversee match-making pipelines, resolve disputes, and manage users.\n- Incorporated a reliable **Payment Gateway** to process handle platform commissions, and automate tutor payouts.",
