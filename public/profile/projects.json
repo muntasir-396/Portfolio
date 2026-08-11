@@ -38,11 +38,15 @@
     },
     {
       "text": "Tutor Live",
-      "href": "https://xyz-tuition.ai.studio"
+      "href": "https://tutorlink-bangladesh.ai.studio"
     },
     {
       "text": "Admin Live",
-      "href": "https://xyz-tuition.ai.studio/?tab=admin-login"
+      "href": "https://tutorlink-bangladesh.ai.studio/admin"
+    },
+    {
+      "text": "Guardian Tuition Apply",
+      "href": "https://tutorlink-bangladesh.ai.studio/guardian"
     }
   ],
   "tags": [
