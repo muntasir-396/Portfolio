@@ -2,6 +2,7 @@ import React, { useState, useEffect, Suspense } from 'react';
 import FallbackSpinner from './components/FallbackSpinner';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
+import IntroVideo from './components/IntroVideo';
 import endpoints from './constants/endpoints';
 
 const componentMap = {
@@ -40,6 +41,7 @@ function MainApp() {
 
   return (
     <div className="MainApp">
+      <IntroVideo />
       <NavBar />
       <main className="main">
         <Suspense fallback={<FallbackSpinner />}>

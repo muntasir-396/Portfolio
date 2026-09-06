@@ -51,23 +51,17 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html {
+    background-color: #06060a;
     scrollbar-color: var(--border) transparent;
   }
 
   body {
-    /* Direct theme values (as the original did) plus Bootstrap's own body
-       variables so its reboot rules resolve to the active theme regardless of
-       stylesheet order. A pair of soft accent glows adds depth to the page. */
-    --bs-body-bg: ${({ theme }) => theme.background};
+    --bs-body-bg: transparent;
     --bs-body-color: ${({ theme }) => theme.color};
-    background-color: ${({ theme }) => theme.background};
-    background-image:
-      radial-gradient(48rem 48rem at 100% -8%, ${({ theme }) => theme.glow1}, transparent 60%),
-      radial-gradient(42rem 42rem at -10% 8%, ${({ theme }) => theme.glow2}, transparent 55%);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-color: transparent !important;
+    background-image: none !important;
     color: ${({ theme }) => theme.color};
-    transition: background-color 0.3s var(--ease), color 0.3s var(--ease);
+    transition: color 0.3s var(--ease);
   }
 
   a {

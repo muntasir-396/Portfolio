@@ -1,0 +1,183 @@
+/* Cinematic Opening Video & Atmospheric Background Layer */
+
+/* Permanent fixed background video layer */
+.intro-video-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+  background-color: #06060a;
+  transform-origin: center center;
+  will-change: opacity, filter, transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.intro-video__element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Atmospheric subtle dark overlay with minimal edge vignette */
+.intro-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(6, 6, 10, 0.40) 0%, rgba(4, 4, 8, 0.65) 100%),
+              rgba(6, 6, 10, 0.45);
+  pointer-events: none;
+  will-change: opacity;
+}
+
+/* First Screen Content (Intro Hero Screen) */
+.intro-screen {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6) var(--space-5);
+  box-sizing: border-box;
+  text-align: center;
+  pointer-events: auto;
+}
+
+.intro-content {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  will-change: opacity, transform;
+}
+
+.intro-eyebrow {
+  font-family: var(--font-mono, monospace);
+  font-size: clamp(0.72rem, 1.8vw, 0.84rem);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent, #818cf8);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: var(--space-3);
+  text-shadow: 0 0 20px rgba(129, 140, 248, 0.4);
+}
+
+.intro-eyebrow::before,
+.intro-eyebrow::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 1px;
+  background: var(--accent, #818cf8);
+  opacity: 0.6;
+}
+
+.intro-headline {
+  font-family: var(--font-display, Georgia, serif);
+  font-size: clamp(2.2rem, 5.8vw, 4.2rem);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  margin: 0 0 var(--space-6) 0;
+  text-shadow: 0 4px 32px rgba(0, 0, 0, 0.8);
+}
+
+.intro-description {
+  font-family: var(--font-sans, sans-serif);
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  font-weight: 400;
+  line-height: 1.68;
+  color: rgba(255, 255, 255, 0.82);
+  max-width: 58ch;
+  margin: 0 0 var(--space-7) 0;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.7);
+}
+
+.intro-scroll-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.88);
+  font-family: var(--font-mono, monospace);
+  font-size: clamp(0.72rem, 2vw, 0.8rem);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: rgba(18, 14, 28, 0.65);
+  padding: 0.65rem 1.45rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease, color 0.25s ease;
+  user-select: none;
+}
+
+.intro-scroll-btn:hover {
+  background: rgba(30, 22, 50, 0.88);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+.intro-arrow-icon {
+  width: 14px;
+  height: 14px;
+  animation: introArrowBounce 2s infinite ease-in-out;
+}
+
+@keyframes introArrowBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(4px);
+  }
+  60% {
+    transform: translateY(2px);
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-screen {
+    padding: var(--space-5) var(--space-4);
+  }
+  .intro-eyebrow::before,
+  .intro-eyebrow::after {
+    display: none;
+  }
+  .intro-description {
+    margin-bottom: var(--space-5);
+  }
+  .intro-scroll-btn {
+    padding: 0.55rem 1.2rem;
+    font-size: 0.7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intro-arrow-icon {
+    animation: none;
+  }
+  .intro-video-bg {
+    filter: none !important;
+    transform: none !important;
+  }
+}

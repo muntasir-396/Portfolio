@@ -1,1 +1,0 @@
-import{r as e}from"./rolldown-runtime-hePW80VL.js";import{A as t,M as n,q as r}from"./modules-DdxiDmwn.js";import"./index-vLDTsCej.js";r();var i=e(t(),1),a=e(n(),1);function o(e){let{title:t}=e;return(0,a.jsx)(`div`,{className:`header`,children:t})}o.propTypes={title:i.default.string.isRequired};export{o as t};

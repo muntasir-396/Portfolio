@@ -67,11 +67,13 @@
 
 /* Card */
 .tl-card {
-  background: var(--surface);
+  background: rgba(18, 18, 22, 0.94);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   padding: var(--space-5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   transition: transform var(--dur) var(--ease),
     box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
 }

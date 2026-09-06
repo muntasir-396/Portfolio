@@ -8,26 +8,34 @@ html {
   flex-direction: row;
   min-height: 100vh;
   width: 100%;
+  background: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 /* ---- Layout shell -------------------------------------------------------- */
 /* min-height (not fixed height) so long bento pages scroll naturally. */
 .MainApp {
   width: 100%;
-  padding-top: 9vh;
+  padding-top: 0;
   min-height: 100vh;
+  background: transparent;
+  position: relative;
+  z-index: 1;
 }
 
 .main {
   display: flex;
   flex-direction: column;
   min-height: 82vh;
+  background: transparent;
 }
 
 .portfolio-section {
   scroll-margin-top: 80px;
   width: 100%;
   margin-bottom: var(--space-6);
+  background: transparent;
 }
 
 .home-fade-container {
@@ -45,6 +53,7 @@ html {
   max-width: 1080px;
   margin: 0 auto;
   padding: var(--space-4) var(--space-5) var(--space-8);
+  background: transparent;
 }
 
 /* ---- Bento + tile primitives -------------------------------------------- */
@@ -67,11 +76,13 @@ html {
 .tile {
   position: relative;
   overflow: hidden;
-  background: var(--surface);
+  background: rgba(18, 18, 22, 0.94);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-sm);
   padding: var(--space-6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .tile--interactive {

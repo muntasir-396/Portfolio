@@ -92,7 +92,12 @@ const NavBar = () => {
     setExpanded(false);
     const targetId = href.replace(/^(\/|#)+/, '') || 'home';
     if (targetId === 'home') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      const el = document.getElementById('home');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
       window.history.pushState(null, '', '#home');
       setActiveSection('home');
       return;
@@ -103,6 +108,12 @@ const NavBar = () => {
       window.history.pushState(null, '', `#${targetId}`);
       setActiveSection(targetId);
     }
+  };
+
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    setExpanded(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -117,7 +128,7 @@ const NavBar = () => {
         {data?.logo && (
           <Navbar.Brand
             href="#home"
-            onClick={(e) => handleNavClick(e, '#home')}
+            onClick={handleLogoClick}
           >
             <img
               src={data?.logo?.source}
