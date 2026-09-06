@@ -1,0 +1,34 @@
+{
+    "sections": [
+        {
+            "title": "Home",
+            "href": "#home"
+        },
+        {
+            "title": "About",
+            "href": "#about"
+        },
+        {
+            "title": "Skills",
+            "href": "#skills"
+        },
+        {
+            "title": "Education",
+            "href": "#education"
+        },
+        {
+            "title": "Experience",
+            "href": "#experience"
+        },
+        {
+            "title": "Projects",
+            "href": "#projects"
+        },
+        {
+            "title": "Resume",
+            "href": "/Muntasir_Mamun_CV.pdf",
+            "type": "link"
+        }
+    ]
+
+}

@@ -1,0 +1,147 @@
+{
+  "projects": [
+{
+"image": "/images/projects/ed-tech-project.png",
+
+"title": "ED_TECH_PROJECT",
+
+"bodyText": "- Built a comprehensive full-stack **EdTech course-selling platform** connecting Instructors and Students.\n- Developed a complete **Course Marketplace** where instructors can create, manage, and publish courses while students can browse, purchase, and access their enrolled courses.\n- Implemented **Student Learning Management** features including course enrollment, lesson access, progress tracking, and personalized learning experiences.\n- Built an **Instructor Dashboard** for creating courses, managing lessons and content, monitoring enrollments, and tracking course performance.\n- Developed a centralized **Admin Dashboard** for managing users, instructors, courses, categories, transactions, and overall platform activity.\n- Integrated a secure **Payment Gateway** to process course purchases, manage transactions, platform commissions, and instructor payouts.\n- Implemented **role-based authentication and authorization** for Students, Instructors, and Administrators to ensure secure access to platform features.\n- Designed a responsive and user-friendly interface to provide a seamless experience across course discovery, purchasing, and online learning.",
+
+"links": [
+{
+"text": "GitHub",
+"href": "https://github.com/muntasir-396/ED-TECH"
+},
+{
+"text": "Live",
+"href": "https://ed-tech-244954813348.asia-southeast1.run.app"
+}
+],
+
+"tags": [
+"React",
+"Node.js",
+"JavaScript",
+"MongoDB",
+"REST API",
+"Payment Gateway"
+]
+},
+{
+  "image": "/images/projects/tuition-media.png",
+  "title": "TUITION_MEDIA",
+  "bodyText": "- Built a comprehensive tuition management platform connecting teachers, students, and guardians.\n- Implemented a secure marketplace where Guardians can **post tuition opportunities** and Teachers can **apply for available tuition**.\n- Integrated **Guardian-Teacher Management tools** for seamless background verification, profile approvals, and onboarding.\n- Developed an automated **Demo Schedule system** allowing guardians to book and track trial classes with prospective tutors.\n- Built a central **Admin Dashboard** with overarching metrics to oversee match-making pipelines, resolve disputes, and manage users.\n- Incorporated a reliable **Payment Gateway** to process handle platform commissions, and automate tutor payouts.",
+  "links": [
+    {
+      "text": "GitHub",
+      "href": ""
+    },
+    {
+      "text": "Tutor Live",
+      "href": "https://tutorlink-bangladesh.ai.studio"
+    },
+    {
+      "text": "Admin Live",
+      "href": "https://tutorlink-bangladesh.ai.studio/admin"
+    },
+    {
+      "text": "Guardian Tuition Apply",
+      "href": "https://tutorlink-bangladesh.ai.studio/guardian"
+    }
+  ],
+  "tags": [
+    "React",
+    "Node.js",
+    "JavaScript"
+  ]
+},
+
+    {
+      "image": "/images/projects/virtual-tryon.png",
+      "title": "AI Virtual Try-On Fashion E-commerce Platform",
+      "bodyText": "- Developed a production-ready AI virtual try-on system for fashion e-commerce using state-of-the-art models from **Hugging Face**.\n- Implemented human parsing, image segmentation, pose estimation, and virtual garment fitting pipelines.\n- Deployed GPU inference services on **AWS**, **Google Cloud Platform**, and **DigitalOcean**.\n- Built a responsive frontend using **Next.js**, **React**, and **Tailwind CSS**.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/muntasir-396/Trial_On"
+        },
+        {
+          "text": "Live",
+          "href": "https://your-tryon.vercel.app"
+        }
+      ],
+      "tags": [
+
+        "Diffusion Models",
+        "PyTorch",
+        "Hugging Face",
+        "AWS",
+        "GCP",
+        "DigitalOcean",
+        "Next.js"
+      ]
+    },
+    {
+      "image": "/images/projects/research-agent.png",
+      "title": "DEEP_RESEARCH_GEN_AI",
+      "bodyText": "- Built an autonomous AI research assistant using **LangChain**, **Mistral AI**, and **Tavily Search**.\n- Implemented intelligent planning, web search, document analysis, summarization, and report generation.\n- Developed an interactive **Streamlit** interface for AI-assisted research.\n- Automated multi-step research workflows using multiple AI agents.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/muntasir-396/DEEP_RESEARCH_GEN_AI"
+        }
+      ],
+      "tags": [
+        "LangChain",
+        "Mistral AI",
+        "Python",
+        "Streamlit",
+        "LLM",
+        "AI Agents"
+      ]
+    },
+    {
+      "image": "/images/projects/metro-rail.png",
+      "title": "Dhaka Metro Rail Management System",
+      "bodyText": "- Designed and implemented a comprehensive Metro Rail Management System using **MySQL**.\n- Developed normalized relational database schemas for trains, stations, routes, schedules, passengers, and ticket management.\n- Implemented SQL queries, stored procedures, triggers, views, and constraints.\n- Optimized database performance through indexing and efficient query design.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/muntasir-396/MetroRail-System"
+        }
+      ],
+      "tags": [
+        "MySQL",
+        "SQL",
+        "DBMS",
+        "Database Design",
+        "Stored Procedures"
+      ]
+    },
+    
+    {
+      "image": "/images/projects/retail-ai.png",
+      "title": "AI Retail Management Platform (On Going)",
+      "bodyText": "- Built a full-stack AI-powered retail management platform using **Next.js**, **React**, **TypeScript**, **Prisma**, and **PostgreSQL**.\n- Developed inventory, sales, expense, customer, analytics, and employee management modules.\n- Integrated AI features including automated product descriptions, UGC image generation, and business workflow automation.\n- Designed scalable REST APIs with secure authentication and responsive dashboards.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/yourusername/retail-ai"
+        },
+        {
+          "text": "Live",
+          "href": "https://your-retail-ai.vercel.app"
+        }
+      ],
+      "tags": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Prisma",
+        "PostgreSQL",
+        "AI",
+        "Tailwind CSS"
+      ]
+    }
+  ]
+}

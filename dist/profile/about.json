@@ -1,0 +1,38 @@
+{
+  "about": {
+    "leftColumn": {
+      "title1": "Current Focus",
+      "currentFocus": [
+        "Neural Networks & Deep Learning",
+        "Generative AI",
+        "Diffusion Models",
+        "AI Research"
+      ],
+      "title2": "Research",
+      "research": [
+        "AI-Based Communication Systems",
+        "Diffusion-Based Virtual Try-On",
+        "Neural Network Architecture Design",
+        "Dataset Collection & Preparation"
+      ]
+    },
+
+    "rightColumn": {
+      "title1": "AI Engineering",
+      "aiEngineering": [
+        "Deploying Open-Source Models from Hugging Face",
+        "ComfyUI Image & Video Pipelines",
+        "GPU Optimization & Model Fine-Tuning",
+        "Serverless GPU Inference"
+      ],
+      "title2": "Cloud & Development",
+      "cloud": [
+        "AWS • GCP • DigitalOcean",
+        "Docker • Linux",
+        "Open Source Contributions",
+        "LeetCode Problem Solving"
+      ]
+    }
+  },
+  "imageSource": "images/about/profile.png"
+}

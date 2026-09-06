@@ -1,5 +1,4 @@
 import React, { useState, useEffect, Suspense } from 'react';
-import { Routes, Route } from 'react-router-dom';
 import FallbackSpinner from './components/FallbackSpinner';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
@@ -25,26 +24,43 @@ function MainApp() {
       .catch((err) => err);
   }, []);
 
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 50);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="MainApp">
       <NavBar />
       <main className="main">
         <Suspense fallback={<FallbackSpinner />}>
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            {data
-              && data.sections.map((route) => {
-                const SectionComponent = componentMap[route.component];
-                if (!SectionComponent) return null;
-                return (
-                  <Route
-                    key={route.headerTitle}
-                    path={route.path}
-                    element={<SectionComponent header={route.headerTitle} />}
-                  />
-                );
-              })}
-          </Routes>
+          <section id="home" className="portfolio-section">
+            <Home />
+          </section>
+          {data
+            && data.sections.map((route) => {
+              const SectionComponent = componentMap[route.component];
+              if (!SectionComponent) return null;
+              const sectionId = route.path.replace(/^\//, '');
+              return (
+                <section
+                  key={route.headerTitle}
+                  id={sectionId}
+                  className="portfolio-section"
+                >
+                  <SectionComponent header={route.headerTitle} />
+                </section>
+              );
+            })}
         </Suspense>
       </main>
     </div>

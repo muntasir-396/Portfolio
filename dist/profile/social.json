@@ -1,0 +1,20 @@
+{
+    "social": [
+        {
+            "network" : "linkedin",
+            "href": "https://www.linkedin.com/in/muntasir-mamun-70052a23b"
+        },
+        {
+            "network" : "github",
+            "href": "https://github.com/muntasir-396"
+        },
+        {
+            "network" : "leetcode",
+            "href": "https://leetcode.com/u/muntasir30/"
+        },
+        {
+            "network" : "email",
+            "href": "mailto:muntasirmamun396@gmail.com"
+        }
+    ]
+}

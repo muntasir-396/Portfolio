@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 import { Fade } from 'react-awesome-reveal';
-import { Link } from 'react-router-dom';
 import endpoints from '../constants/endpoints';
 import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
@@ -30,6 +29,14 @@ function Home() {
       .catch((err) => err);
   }, []);
 
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+      window.history.pushState(null, '', `#${id}`);
+    }
+  };
+
   return data ? (
     <Fade triggerOnce className="home-fade-container">
       <section className="hero">
@@ -51,12 +58,26 @@ function Home() {
             </div>
             {data?.tagline && <p className="hero-tagline">{data.tagline}</p>}
             <div className="hero-cta">
-              <Link className="btn-pill btn-accent" to="/projects">
+              <a
+                className="btn-pill btn-accent"
+                href="#projects"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('projects');
+                }}
+              >
                 View my work
-              </Link>
-              <Link className="btn-pill btn-ghost" to="/about">
+              </a>
+              <a
+                className="btn-pill btn-ghost"
+                href="#about"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection('about');
+                }}
+              >
                 About me
-              </Link>
+              </a>
             </div>
           </div>
 

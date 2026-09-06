@@ -1,0 +1,55 @@
+{
+  "experiences": [
+    {
+      "title": "Generative AI Developer",
+      "subtitle": "Multi-Agent Research System",
+      "workType": "Personal Project",
+      "workDescription": [
+        "Built a multi-agent research assistant using **LangChain**, **Mistral AI**, and **Tavily Search**.",
+        "Implemented autonomous search, summarization, and report generation workflows.",
+        "Developed an interactive **Streamlit** interface for research automation.",
+        "Integrated multiple AI agents for planning, retrieval, and content generation."
+      ],
+      "dateText": "10/2025 – Present"
+    },
+    {
+  "title": "Full Stack Developer",
+  "subtitle": "Dhaka Metro Rail Management System",
+  "workType": "Academic Project",
+  "workDescription": [
+    "Developed a full-stack **Metro Rail Management System** with responsive frontend, backend APIs, and relational database integration.",
+    "Designed intuitive user interfaces for passenger registration, ticket booking, train schedules, route management, and admin operations.",
+    "Built secure backend services implementing authentication, CRUD operations, business logic, and RESTful API architecture.",
+    "Designed and optimized a normalized **MySQL** database for stations, trains, routes, schedules, passengers, bookings, and ticket management.",
+    "Implemented input validation, role-based access control, error handling, and efficient database queries to ensure data consistency and application reliability.",
+    "Integrated frontend, backend, and database components to deliver a complete end-to-end metro rail management solution."
+  ],
+  "dateText": "2025"
+},
+        {
+      "title": "Generative AI Developer",
+      "subtitle": "Virtual Try-On Platform",
+      "workType": "Startup Project",
+      "workDescription": [
+    "Built a production-ready AI virtual try-on platform for fashion e-commerce using open-source models from **Hugging Face**.",
+    "Implemented computer vision pipelines including human parsing, image segmentation, pose estimation, and virtual garment fitting.",
+    "Containerized and deployed inference services on **AWS**, **Google Cloud Platform (GCP)**, and **DigitalOcean** with GPU acceleration.",
+    "Developed a modern full-stack application using **Next.js**, **React**, **Tailwind CSS**, REST APIs, and cloud-based AI inference."
+      ],
+      "dateText": "01/2026 – Present"
+    },
+
+    {
+      "title": "AI Full Stack Developer",
+      "subtitle": "AI Retail Management Platform",
+      "workType": "Personal Project",
+      "workDescription": [
+        "Built a full-stack AI-powered retail management system using **Next.js**, **TypeScript**, and **PostgreSQL**.",
+        "Developed inventory, sales, expense, and customer management modules.",
+        "Integrated AI-powered automation for content generation and business workflows.",
+        "Designed scalable REST APIs and responsive user interfaces."
+      ],
+      "dateText": "05/2026 – Present"
+    }
+  ]
+}
