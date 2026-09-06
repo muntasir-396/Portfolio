@@ -3,6 +3,7 @@ import FallbackSpinner from './components/FallbackSpinner';
 import NavBar from './components/NavBar';
 import Home from './components/Home';
 import IntroVideo from './components/IntroVideo';
+import MusicPlayer from './components/MusicPlayer';
 import endpoints from './constants/endpoints';
 
 const componentMap = {
@@ -43,6 +44,7 @@ function MainApp() {
     <div className="MainApp">
       <IntroVideo />
       <NavBar />
+      <MusicPlayer />
       <main className="main">
         <Suspense fallback={<FallbackSpinner />}>
           <section id="home" className="portfolio-section">
