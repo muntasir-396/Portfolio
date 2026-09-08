@@ -1,7 +1,6 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import FallbackSpinner from './components/FallbackSpinner';
 import NavBar from './components/NavBar';
-import Home from './components/Home';
 import IntroVideo from './components/IntroVideo';
 import MusicPlayer from './components/MusicPlayer';
 import endpoints from './constants/endpoints';
@@ -12,6 +11,8 @@ const componentMap = {
   Education: React.lazy(() => import('./components/Education.jsx')),
   Experience: React.lazy(() => import('./components/Experience.jsx')),
   Projects: React.lazy(() => import('./components/Projects.jsx')),
+  Achievements: React.lazy(() => import('./components/Achievements.jsx')),
+  Contact: React.lazy(() => import('./components/Contact.jsx')),
 };
 
 function MainApp() {
@@ -47,9 +48,6 @@ function MainApp() {
       <MusicPlayer />
       <main className="main">
         <Suspense fallback={<FallbackSpinner />}>
-          <section id="home" className="portfolio-section">
-            <Home />
-          </section>
           {data
             && data.sections.map((route) => {
               const SectionComponent = componentMap[route.component];

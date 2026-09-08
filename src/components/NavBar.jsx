@@ -2,7 +2,6 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import React, { useEffect, useState, useContext, useMemo } from 'react';
 import styled, { ThemeContext } from 'styled-components';
 import endpoints from '../constants/endpoints';
-import ThemeToggler from './ThemeToggler';
 
 const styles = {
   logoStyle: {
@@ -38,7 +37,7 @@ const NavBar = () => {
   const theme = useContext(ThemeContext);
   const [data, setData] = useState(null);
   const [expanded, setExpanded] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState('about');
 
   useEffect(() => {
     fetch(endpoints.navbar, {
@@ -50,10 +49,10 @@ const NavBar = () => {
   }, []);
 
   const sectionIds = useMemo(() => {
-    if (!data?.sections) return ['home', 'about', 'skills', 'education', 'experience', 'projects'];
+    if (!data?.sections) return ['about', 'skills', 'education', 'experience', 'projects', 'achievements', 'contact'];
     return data.sections
       .filter((s) => s.type !== 'link')
-      .map((s) => s.href.replace(/^(\/|#)+/, '') || 'home');
+      .map((s) => s.href.replace(/^(\/|#)+/, '') || 'about');
   }, [data]);
 
   useEffect(() => {
@@ -90,23 +89,14 @@ const NavBar = () => {
   const handleNavClick = (e, href) => {
     e.preventDefault();
     setExpanded(false);
-    const targetId = href.replace(/^(\/|#)+/, '') || 'home';
-    if (targetId === 'home') {
-      const el = document.getElementById('home');
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth' });
-      } else {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }
-      window.history.pushState(null, '', '#home');
-      setActiveSection('home');
-      return;
-    }
+    const targetId = href.replace(/^(\/|#)+/, '') || 'about';
     const el = document.getElementById(targetId);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
       window.history.pushState(null, '', `#${targetId}`);
       setActiveSection(targetId);
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
@@ -127,7 +117,7 @@ const NavBar = () => {
       <Container>
         {data?.logo && (
           <Navbar.Brand
-            href="#home"
+            href="#about"
             onClick={handleLogoClick}
           >
             <img
@@ -183,9 +173,6 @@ const NavBar = () => {
                 );
               })}
           </Nav>
-          <ThemeToggler
-            onClick={() => setExpanded(false)}
-          />
         </Navbar.Collapse>
       </Container>
     </Navbar>

@@ -1,10 +1,6 @@
 {
     "sections": [
         {
-            "title": "Home",
-            "href": "#home"
-        },
-        {
             "title": "About",
             "href": "#about"
         },
@@ -23,6 +19,14 @@
         {
             "title": "Projects",
             "href": "#projects"
+        },
+        {
+            "title": "Achievements",
+            "href": "#achievements"
+        },
+        {
+            "title": "Contact Me",
+            "href": "#contact"
         },
         {
             "title": "Resume",

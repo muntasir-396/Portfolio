@@ -4,65 +4,23 @@ import '../css/music-player.css';
 const MusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef(null);
-  const userMutedRef = useRef(false);
 
   useEffect(() => {
     const audio = audioRef.current;
-    if (!audio) return;
-    audio.volume = 0.5;
-
-    const startPlay = () => {
-      if (userMutedRef.current) return;
-      const playPromise = audio.play();
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            setIsPlaying(true);
-            cleanupListeners();
-          })
-          .catch(() => {
-            // Autoplay policy prevented immediate playback; waiting for first gesture
-          });
-      }
-    };
-
-    const handleFirstGesture = () => {
-      startPlay();
-    };
-
-    const cleanupListeners = () => {
-      window.removeEventListener('click', handleFirstGesture);
-      window.removeEventListener('scroll', handleFirstGesture);
-      window.removeEventListener('touchstart', handleFirstGesture);
-      window.removeEventListener('keydown', handleFirstGesture);
-      window.removeEventListener('wheel', handleFirstGesture);
-    };
-
-    // 1. Attempt immediate autoplay when page loads
-    startPlay();
-
-    // 2. Attach listeners for the first user interaction (scroll, click, touch, wheel)
-    window.addEventListener('click', handleFirstGesture, { passive: true });
-    window.addEventListener('scroll', handleFirstGesture, { passive: true });
-    window.addEventListener('touchstart', handleFirstGesture, { passive: true });
-    window.addEventListener('keydown', handleFirstGesture, { passive: true });
-    window.addEventListener('wheel', handleFirstGesture, { passive: true });
-
-    return () => {
-      cleanupListeners();
-    };
+    if (audio) {
+      audio.volume = 0.5;
+    }
   }, []);
 
-  const togglePlay = () => {
+  const togglePlay = (e) => {
+    e?.stopPropagation();
     const audio = audioRef.current;
     if (!audio) return;
 
     if (isPlaying) {
-      userMutedRef.current = true;
       audio.pause();
       setIsPlaying(false);
     } else {
-      userMutedRef.current = false;
       audio.volume = 0.5;
       const playPromise = audio.play();
       if (playPromise !== undefined) {
@@ -82,8 +40,7 @@ const MusicPlayer = () => {
       <audio
         ref={audioRef}
         loop
-        autoPlay
-        preload="auto"
+        preload="metadata"
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
       >

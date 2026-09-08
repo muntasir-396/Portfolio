@@ -1,0 +1,26 @@
+{
+  "achievements": [
+    {
+      "id": "achievement-ai-engineer",
+      "title": "AI Engineer Career Track Certification",
+      "issuer": "DataCamp",
+      "date": "2024",
+      "description": "",
+      "image": "/images/achievements/Datacamp_Ai_Engineer.jpeg",
+      "video": "",
+      "link": "https://www.datacamp.com/certificate/AEDS0019321666899",
+      "linkText": "View Certification"
+    },
+    {
+      "id": "achievement-data-analyst",
+      "title": "Data Analyst Professional Certification",
+      "issuer": "DataCamp",
+      "date": "2024",
+      "description": "",
+      "image": "/images/achievements/datacamp_Data_Analyst.jpeg",
+      "video": "",
+      "link": "https://www.datacamp.com/certificate/DA0023719968989",
+      "linkText": "View Certification"
+    }
+  ]
+}

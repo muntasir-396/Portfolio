@@ -160,9 +160,9 @@ const IntroVideo = () => {
   }, []);
 
   const handleSkipIntro = () => {
-    const heroEl = document.getElementById('home');
-    if (heroEl) {
-      heroEl.scrollIntoView({ behavior: 'smooth' });
+    const aboutEl = document.getElementById('about');
+    if (aboutEl) {
+      aboutEl.scrollIntoView({ behavior: 'smooth' });
     } else {
       window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
     }

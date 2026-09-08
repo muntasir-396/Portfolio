@@ -24,6 +24,16 @@
             "component": "Projects",
             "path": "/projects",
             "headerTitle": "Projects"
+        },
+        {
+            "component": "Achievements",
+            "path": "/achievements",
+            "headerTitle": "Achievements"
+        },
+        {
+            "component": "Contact",
+            "path": "/contact",
+            "headerTitle": "Contact Me"
         }
     ]
 }

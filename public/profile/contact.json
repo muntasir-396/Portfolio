@@ -1,0 +1,38 @@
+{
+  "title": "Get in Touch",
+  "intro": "I'm always interested in hearing about new opportunities, innovative research collaborations, or answering questions. Feel free to connect or drop a message below!",
+  "email": "muntasirmamun396@gmail.com",
+  "status": "Available for opportunities & collaborations",
+  "socialLinks": [
+    {
+      "network": "email",
+      "href": "mailto:muntasirmamun396@gmail.com",
+      "label": "Email"
+    },
+    {
+      "network": "linkedin",
+      "href": "https://www.linkedin.com/in/muntasir-mamun-70052a23b",
+      "label": "LinkedIn"
+    },
+    {
+      "network": "github",
+      "href": "https://github.com/muntasir-396",
+      "label": "GitHub"
+    },
+    {
+      "network": "leetcode",
+      "href": "https://leetcode.com/u/muntasir30/",
+      "label": "LeetCode"
+    },
+    {
+      "network": "facebook",
+      "href": "https://facebook.com",
+      "label": "Facebook"
+    },
+    {
+      "network": "instagram",
+      "href": "https://instagram.com",
+      "label": "Instagram"
+    }
+  ]
+}
