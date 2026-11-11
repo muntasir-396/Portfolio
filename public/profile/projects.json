@@ -1,32 +1,31 @@
 {
   "projects": [
-{
-"image": "/images/projects/ed-tech-project.png",
+    {
+      "image": "/images/projects/virtual-tryon.png",
+      "title": "AI Virtual Try-On Fashion E-commerce Platform",
+      "bodyText": "- Developed a production-ready AI virtual try-on system for fashion e-commerce using state-of-the-art models from **Hugging Face**.\n- Implemented human parsing, image segmentation, pose estimation, and virtual garment fitting pipelines.\n- Deployed GPU inference services on **AWS**, **Google Cloud Platform**, and **DigitalOcean**.\n- Built a responsive frontend using **Next.js**, **React**, and **Tailwind CSS**.",
+      "links": [
+        {
+          "text": "GitHub",
+          "href": "https://github.com/muntasir-396/Trial_On"
+        },
+        {
+          "text": "Live",
+          "href": "https://your-tryon.vercel.app"
+        }
+      ],
+      "tags": [
 
-"title": "ED_TECH_PROJECT",
+        "Diffusion Models",
+        "PyTorch",
+        "Hugging Face",
+        "AWS",
+        "GCP",
+        "DigitalOcean",
+        "Next.js"
+      ]
+    },
 
-"bodyText": "- Built a comprehensive full-stack **EdTech course-selling platform** connecting Instructors and Students.\n- Developed a complete **Course Marketplace** where instructors can create, manage, and publish courses while students can browse, purchase, and access their enrolled courses.\n- Implemented **Student Learning Management** features including course enrollment, lesson access, progress tracking, and personalized learning experiences.\n- Built an **Instructor Dashboard** for creating courses, managing lessons and content, monitoring enrollments, and tracking course performance.\n- Developed a centralized **Admin Dashboard** for managing users, instructors, courses, categories, transactions, and overall platform activity.\n- Integrated a secure **Payment Gateway** to process course purchases, manage transactions, platform commissions, and instructor payouts.\n- Implemented **role-based authentication and authorization** for Students, Instructors, and Administrators to ensure secure access to platform features.\n- Designed a responsive and user-friendly interface to provide a seamless experience across course discovery, purchasing, and online learning.",
-
-"links": [
-{
-"text": "GitHub",
-"href": "https://github.com/muntasir-396/ED-TECH"
-},
-{
-"text": "Live",
-"href": "https://ed-tech-244954813348.asia-southeast1.run.app"
-}
-],
-
-"tags": [
-"React",
-"Node.js",
-"JavaScript",
-"MongoDB",
-"REST API",
-"Payment Gateway"
-]
-},
       {
       "image": "/images/projects/research-agent.png",
       "title": "DEEP_RESEARCH_GEN_AI",
@@ -56,17 +55,14 @@
       "href": ""
     },
     {
-      "text": "Tutor Live",
-      "href": "https://tutorlink-bangladesh.ai.studio"
+      "text": "Landing Page Live",
+      "href": "https://tuition-media-6agv.onrender.com/?tab=home"
     },
     {
       "text": "Admin Live",
-      "href": "https://tutorlink-bangladesh.ai.studio/admin"
-    },
-    {
-      "text": "Guardian Tuition Apply",
-      "href": "https://tutorlink-bangladesh.ai.studio/guardian"
+      "href": "https://tuition-media-6agv.onrender.com/admin"
     }
+   
   ],
   "tags": [
     "React",
@@ -74,32 +70,34 @@
     "JavaScript"
   ]
 },
+{
+"image": "/images/projects/ed-tech-project.png",
 
-    {
-      "image": "/images/projects/virtual-tryon.png",
-      "title": "AI Virtual Try-On Fashion E-commerce Platform",
-      "bodyText": "- Developed a production-ready AI virtual try-on system for fashion e-commerce using state-of-the-art models from **Hugging Face**.\n- Implemented human parsing, image segmentation, pose estimation, and virtual garment fitting pipelines.\n- Deployed GPU inference services on **AWS**, **Google Cloud Platform**, and **DigitalOcean**.\n- Built a responsive frontend using **Next.js**, **React**, and **Tailwind CSS**.",
-      "links": [
-        {
-          "text": "GitHub",
-          "href": "https://github.com/muntasir-396/Trial_On"
-        },
-        {
-          "text": "Live",
-          "href": "https://your-tryon.vercel.app"
-        }
-      ],
-      "tags": [
+"title": "ED_TECH_PROJECT",
 
-        "Diffusion Models",
-        "PyTorch",
-        "Hugging Face",
-        "AWS",
-        "GCP",
-        "DigitalOcean",
-        "Next.js"
-      ]
-    },
+"bodyText": "- Built a full-stack **EdTech course-selling platform** connecting Students and Instructors.\n- Developed a **Course Marketplace** for course creation, publishing, browsing, purchasing, and enrollment.\n- Implemented **Learning Management** with lesson access and progress tracking.\n- Created **Student, Instructor, and Admin Dashboards** for managing courses, users, content, and transactions.\n- Integrated a secure **Payment Gateway** with platform commissions and instructor payouts.\n- Implemented **role-based authentication and authorization** with a responsive user interface.",
+"links": [
+{
+"text": "GitHub",
+"href": "https://github.com/muntasir-396/ED-TECH"
+},
+{
+"text": "Live",
+"href": "https://ed-tech-244954813348.asia-southeast1.run.app"
+}
+],
+
+"tags": [
+"React",
+"Node.js",
+"JavaScript",
+"MongoDB",
+"REST API",
+"Payment Gateway"
+]
+},
+
+    
     {
       "image": "/images/projects/metro-rail.png",
       "title": "Dhaka Metro Rail Management System",
